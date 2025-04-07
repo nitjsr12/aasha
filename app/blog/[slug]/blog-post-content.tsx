@@ -7,6 +7,17 @@ import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import type { WordPressPost } from "@/lib/wordpress";
 
+// Add this function to generate static paths
+export async function generateStaticParams() {
+  // Fetch your blog posts from WordPress API
+  const response = await fetch('https://your-wordpress-site.com/wp-json/wp/v2/posts?_embed&per_page=100');
+  const posts: WordPressPost[] = await response.json();
+  
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default function BlogPostContent({ post }: { post: WordPressPost | null }) {
   if (!post) {
     return (

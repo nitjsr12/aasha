@@ -34,7 +34,7 @@ const projects = [
     description: "Established libraries in 5 government schools, providing access to 2000+ books for underprivileged students.",
     date: "March 2023",
     status: "Completed",
-    videoUrl: "https://www.facebook.com/share/r/15dk6eE84U/",
+    videoUrl: "https://youtu.be/2ThONcTu0-w",
     thumbnail: "/images/mq4.webp",
     stats: "5 Schools • 2000+ Books"
   },
