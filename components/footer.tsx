@@ -59,16 +59,13 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center mb-6">
-              <Image 
-                src="/images/आशा (1).png" 
-                alt="Hope Foundation Logo" 
-                width={120}
-                height={120}
-                className="h-16 w-16 rounded-full shadow-md border-2 border-primary/20"
-              />
-              <span className="ml-4 text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Aasha Ki Ek Kiran
-              </span>
+               <Image 
+                  src="/images/footer.png" 
+                  alt="Hope Foundation Logo" 
+                  width={400}  // Increased size
+                  height={400}  // Increased size
+                  className="h-[100px] w-[200px] md:h-[100px] md:w[200px] "
+                />
             </Link>
             <p className="text-muted-foreground mb-6">
               Empowering lives through education, support, and community service.

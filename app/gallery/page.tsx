@@ -7,53 +7,151 @@ import "yet-another-react-lightbox/styles.css";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.1",
+    src: "images/2.jpeg",
     alt: "School Library Project",
     title: "School Library Project",
     category: "Education"
   },
   {
-    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.1",
+    src: "images/3.jpeg",
     alt: "Food Distribution Drive",
     title: "Food Distribution Drive",
     category: "Community"
   },
   {
-    src: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.1",
+    src: "images/4.jpeg",
     alt: "Digital Learning Initiative",
     title: "Digital Learning Initiative",
     category: "Education"
   },
   {
-    src: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.1",
+    src: "images/5.jpeg",
     alt: "Community Workshop",
     title: "Community Workshop",
     category: "Community"
   },
   {
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.1",
+    src: "images/6.jpeg",
     alt: "Youth Empowerment",
     title: "Youth Empowerment",
     category: "Education"
   },
   {
-    src: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.1",
+    src: "images/7.jpeg",
     alt: "Health Camp",
     title: "Health Camp",
     category: "Healthcare"
   },
   {
-    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.1",
+    src: "images/8.jpeg",
     alt: "Food Distribution",
     title: "Food Distribution",
     category: "Community"
   },
   {
-    src: "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.1",
+    src: "images/9.jpeg",
     alt: "Rural Education",
     title: "Rural Education",
     category: "Education"
-  }
+  },
+  {
+    src: "images/10.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/11.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/12.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/13.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/14.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/15.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/16.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/18.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/19.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/20.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/21.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/22.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/23.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/24.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/26.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+  {
+    src: "images/27.jpeg",
+    alt: "Rural Education",
+    title: "Rural Education",
+    category: "Education"
+  },
+
+  // Add more images here as needed
 ];
 
 const categories = ["All", "Education", "Community", "Healthcare"];
@@ -62,14 +160,38 @@ export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [images, setImages] = useState(galleryImages);
+  const [newImage, setNewImage] = useState({
+    src: "",
+    alt: "",
+    title: "",
+    category: "Education"
+  });
 
   const filteredImages = selectedCategory === "All"
-    ? galleryImages
-    : galleryImages.filter(img => img.category === selectedCategory);
+    ? images
+    : images.filter(img => img.category === selectedCategory);
 
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
+  };
+
+  const handleAddImage = () => {
+    if (newImage.src && newImage.alt && newImage.title) {
+      setImages([...images, {
+        src: newImage.src,
+        alt: newImage.alt,
+        title: newImage.title,
+        category: newImage.category
+      }]);
+      setNewImage({
+        src: "",
+        alt: "",
+        title: "",
+        category: "Education"
+      });
+    }
   };
 
   return (
@@ -93,7 +215,7 @@ export default function GalleryPage() {
           </p>
           <div className="flex justify-center space-x-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">1000+</div>
+              <div className="text-4xl font-bold mb-2">{images.length}+</div>
               <div className="text-lg">Photos</div>
             </div>
             <div className="text-center">
@@ -101,7 +223,7 @@ export default function GalleryPage() {
               <div className="text-lg">Events</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">3</div>
+              <div className="text-4xl font-bold mb-2">{categories.length - 1}</div>
               <div className="text-lg">Categories</div>
             </div>
           </div>
@@ -109,7 +231,8 @@ export default function GalleryPage() {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        {/* Category Filter */}
+        {/* Add Image Form */}
+                {/* Category Filter */}
         <motion.div 
           className="flex justify-center gap-4 mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -132,44 +255,50 @@ export default function GalleryPage() {
         </motion.div>
 
         {/* Gallery Grid */}
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-          layout
-        >
-          {filteredImages.map((image, index) => (
-            <motion.div
-              key={image.src}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              className="group relative cursor-pointer overflow-hidden rounded-lg"
-              onClick={() => openLightbox(index)}
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
-                <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-xl font-bold mb-2">{image.title}</h3>
-                  <p className="text-sm">{image.category}</p>
+        {filteredImages.length > 0 ? (
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            layout
+          >
+            {filteredImages.map((image, index) => (
+              <motion.div
+                key={`${image.src}-${index}`}
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="group relative cursor-pointer overflow-hidden rounded-lg"
+                onClick={() => openLightbox(index)}
+              >
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                  <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-xl font-bold mb-2">{image.title}</h3>
+                    <p className="text-sm">{image.category}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-xl text-gray-500">No images found in this category</p>
+          </div>
+        )}
 
         {/* Lightbox */}
         <Lightbox
           open={lightboxOpen}
           close={() => setLightboxOpen(false)}
           index={lightboxIndex}
-          slides={galleryImages}
+          slides={filteredImages}
         />
       </div>
     </main>

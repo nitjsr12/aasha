@@ -266,10 +266,10 @@ export default function AboutPage() {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { number: "1000+", label: "Students Supported" },
-            { number: "50+", label: "Schools Partnered" },
+            { number: "500+", label: "Students Supported" },
+            { number: "10+", label: "Schools Partnered" },
             { number: "24", label: "Monthly Visits" },
-            { number: "100+", label: "Success Stories" }
+            { number: "10+", label: "Success Stories" }
           ].map((item, index) => (
             <motion.div 
               key={index}

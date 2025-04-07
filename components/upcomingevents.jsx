@@ -24,40 +24,17 @@ const cardHover = {
 const events = [
   {
     id: 1,
-    title: "Annual Charity Gala",
-    description: "Join us for an evening of fundraising to support our education initiatives. Black tie optional.",
-    date: "May 15, 2024",
-    time: "7:00 PM",
-    location: "Grand Ballroom, City Convention Center",
-    image: "/images/gala.webp",
+    title: "Summer Food Drive",
+    description: "Join us for a Summer Food Drive to support the residents of the old age home.",
+    date: "April 18, 2025",
+    time: "8:00 AM",
+    location: "Omashram Trust – Old Age Care  (bengaluru)",
+    image: "/images/food drive.png",
     status: "Upcoming",
-    attendees: "120+ Registered",
+    attendees: "10+ Registered",
     action: "Register Now"
   },
-  {
-    id: 2,
-    title: "Community Health Camp",
-    description: "Free health checkups and medical consultations for underprivileged communities.",
-    date: "June 8, 2024",
-    time: "9:00 AM - 4:00 PM",
-    location: "Central Park Community Center",
-    image: "/images/health-camp.webp",
-    status: "Upcoming",
-    attendees: "Volunteers Needed",
-    action: "Volunteer"
-  },
-  {
-    id: 3,
-    title: "Back-to-School Drive",
-    description: "Help us distribute school supplies to 1000+ children in need before the new academic year.",
-    date: "July 20, 2024",
-    time: "10:00 AM - 2:00 PM",
-    location: "Downtown Plaza",
-    image: "/images/school-drive.webp",
-    status: "Upcoming",
-    attendees: "50+ Volunteers",
-    action: "Donate Supplies"
-  }
+  
 ];
 
 export function UpcomingEventsSection() {

@@ -98,16 +98,13 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               <Image 
-                src="/images/आशा (1).png" 
+                src="/images/footer.png" 
                 alt="Hope Foundation Logo" 
-                width={140}  // Increased size
-                height={140}  // Increased size
-                className="h-14 w-14 md:h-16 md:w-16 rounded-full border-2 border-primary/20 shadow-md"
+                width={400}  // Increased size
+                height={400}  // Increased size
+                className="h-[100px] w-[200px] md:h-100 md:w-100 "
               />
             </motion.div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Aasha Ki Ek Kiran
-            </span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -167,9 +164,6 @@ export default function Navbar() {
             >
               <Search className="w-5 h-5" />
             </button>
-            
-            
-            
             <Link href="/contact">
               <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-lg hover:shadow-primary/30 transition-all">
               Contact Us
@@ -281,17 +275,6 @@ export default function Navbar() {
                       )}
                     </div>
                   ))}
-                  
-                  {/* Dark Mode Toggle in Mobile Menu */}
-                  <div className="border-b border-gray-100 dark:border-gray-800 pb-3">
-                    <button
-                      onClick={toggleDarkMode}
-                      className="flex items-center justify-between w-full py-4 text-gray-700 dark:text-gray-300 hover:text-primary font-medium text-lg"
-                    >
-                      {darkMode ? "Light Mode" : "Dark Mode"}
-                      {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-                    </button>
-                  </div>
                   
                   {/* Social Media Icons in Mobile Menu */}
                   <div className="border-b border-gray-100 dark:border-gray-800 pb-4">
