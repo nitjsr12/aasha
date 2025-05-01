@@ -70,3 +70,41 @@ export async function getPost(id: number): Promise<WordPressPost | null> {
     return null;
   }
 }
+// Schema for WordPress category
+const categorySchema = z.object({
+  id: z.number(),
+  name: z.string(),
+  slug: z.string(),
+});
+
+export type WordPressCategory = z.infer<typeof categorySchema>;
+
+// Get latest 5 posts (you can change count)
+export async function getLatestPosts(): Promise<WordPressPost[]> {
+  try {
+    const response = await fetch(`${WORDPRESS_API_URL}/posts?_embed&per_page=5`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch latest posts');
+    }
+    const data = await response.json();
+    return z.array(postSchema).parse(data);
+  } catch (error) {
+    console.error('Error fetching latest posts:', error);
+    return [];
+  }
+}
+
+// Get all categories
+export async function getCategories(): Promise<WordPressCategory[]> {
+  try {
+    const response = await fetch(`${WORDPRESS_API_URL}/categories`);
+    if (!response.ok) {
+      throw new Error('Failed to fetch categories');
+    }
+    const data = await response.json();
+    return z.array(categorySchema).parse(data);
+  } catch (error) {
+    console.error('Error fetching WordPress categories:', error);
+    return [];
+  }
+}

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { getPosts, type WordPressPost } from "@/lib/wordpress";
 import { format } from "date-fns";
+import Image from "next/image";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -30,38 +31,28 @@ export default function BlogPage() {
   return (
     <main>
       {/* Hero Banner */}
-      <div 
-        className="relative h-[80vh] bg-cover bg-center flex items-center justify-center"
-        style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.1")'
-        }}
-      >
-        <motion.div 
-          className="text-center text-white px-4 max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-6xl font-bold mb-6">Our Blog</h1>
-          <p className="text-2xl mb-8">
-            Stories of impact, hope, and transformation from our community
-          </p>
-          <div className="flex justify-center space-x-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">{posts.length}+</div>
-              <div className="text-lg">Stories</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-lg">Contributors</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold mb-2">1000+</div>
-              <div className="text-lg">Readers</div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
+      <section className="relative h-[500px] overflow-hidden">
+             <Image
+               src="/images/banner-3.jpg"
+               alt="Our previous initiatives making impact"
+               fill
+               className="object-cover"
+               priority
+             />
+             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 flex flex-col justify-end pb-16 px-8 text-white">
+               <motion.div
+                 initial={{ opacity: 0, y: 50 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8 }}
+                 className="max-w-4xl mx-auto text-center"
+               >
+                 <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Blog</h1>
+                 <p className="text-xl md:text-2xl mb-8">
+                 Stories of impact, hope, and transformation from our community
+                 </p>
+               </motion.div>
+             </div>
+           </section>
 
       <div className="container mx-auto px-4 py-12">
         {loading ? (

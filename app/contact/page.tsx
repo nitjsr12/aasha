@@ -98,7 +98,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <Image
-          src="/images/contact-hero.jpg"
+          src="/images/banner-3.jpg"
           alt="People connecting and communicating"
           fill
           className="object-cover"

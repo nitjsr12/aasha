@@ -102,7 +102,7 @@ export default function CausesPage() {
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
         <Image
-          src="/images/causes-hero.jpg"
+          src="/images/banner-3.jpg"
           alt="Children learning and smiling"
           fill
           className="object-cover"

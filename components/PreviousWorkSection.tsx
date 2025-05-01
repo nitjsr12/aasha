@@ -30,34 +30,35 @@ const cardHover = {
 const projects = [
   {
     id: 1,
-    title: "School Library Project",
-    description: "Established libraries in 5 government schools, providing access to 2000+ books for underprivileged students.",
-    date: "March 2023",
+    title: "Study Material Donation",
+    description: "Distributed essential study materials to girls at orphanage homes, empowering their education and dreams.",
+    date: "Feb 11, 2022",
     status: "Completed",
-    videoUrl: "https://youtu.be/2ThONcTu0-w",
-    thumbnail: "/images/mq4.webp",
-    stats: "5 Schools • 2000+ Books"
+    videoUrl: "https://youtu.be/vSrv11UqpWU?si=jR0arl48FzeDga3B", // (keep your video or update if needed)
+    thumbnail: "/images/mq4.webp", // (keep or update thumbnail if needed)
+    stats: "50+ Girls • 1 Orphanage"
   },
   {
-    id: 2,
-    title: "Summer Food Drive",
-    description: "Distributed food packages to over 500 families during the summer months when school meals weren't available.",
-    date: "June 2023",
-    status: "Completed",
-    videoUrl: "https://youtu.be/AHeuz4cT0Xo",
-    thumbnail: "/images/mq2.webp",
-    stats: "500+ Families • 3000 Meals"
-  },
+      id: 2,
+      title: "Birthday Celebration at Orphanage",
+      description: "Celebrated my birthday by donating study materials and sweets to the children at the orphanage, spreading smiles and hope.",
+      date: "Jan 15, 2022",
+      status: "Completed",
+      videoUrl: "https://youtu.be/AHeuz4cT0Xo", // keep or update the video link if needed
+      thumbnail: "/images/mq2.webp", // keep or update thumbnail
+      stats: "40+ Children • 1 Orphanage "
+    },
   {
-    id: 3,
-    title: "Digital Learning Initiative",
-    description: "Provided tablets and digital resources to 3 rural schools, impacting 750+ students with modern learning tools.",
-    date: "September 2023",
-    status: "Completed",
-    videoUrl: "https://youtu.be/nGpTi3dqrpE",
-    thumbnail: "/images/mq3.webp",
-    stats: "3 Schools • 750 Students"
-  }
+      id: 3,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 15, 2022",
+      status: "Completed",
+      videoUrl: "https://youtu.be/nGpTi3dqrpE", // update if you have a different video
+      thumbnail: "/images/mq3.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    }
+    
 ];
 
 export function PreviousWorkSection() {
@@ -177,7 +178,7 @@ export function PreviousWorkSection() {
               size="lg" 
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-lg hover:shadow-primary/30 transition-all group"
             >
-              Explore All Projects 
+              View All Stories
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

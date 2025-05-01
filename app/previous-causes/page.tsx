@@ -30,34 +30,105 @@ const cardHover = {
 const projects = [
   {
     id: 1,
-    title: "School Library Project",
-    description: "Established libraries in 5 government schools, providing access to 2000+ books for underprivileged students.",
-    date: "March 2023",
+    title: "Study Material Donation",
+    description: "Distributed essential study materials to girls at orphanage homes, empowering their education and dreams.",
+    date: "March 2024",
     status: "Completed",
-    videoUrl: "https://youtu.be/2ThONcTu0-w",
-    thumbnail: "/images/mq4.webp",
-    stats: "5 Schools • 2000+ Books"
+    videoUrl: "https://youtu.be/2ThONcTu0-w", // (keep your video or update if needed)
+    thumbnail: "/images/mq4.webp", // (keep or update thumbnail if needed)
+    stats: "50+ Girls • 1 Orphan Homes"
   },
   {
-    id: 2,
-    title: "Summer Food Drive",
-    description: "Distributed food packages to over 500 families during the summer months when school meals weren't available.",
-    date: "June 2023",
-    status: "Completed",
-    videoUrl: "https://youtu.be/AHeuz4cT0Xo",
-    thumbnail: "/images/mq2.webp",
-    stats: "500+ Families • 3000 Meals"
-  },
+      id: 2,
+      title: "Birthday Celebration at Orphanage",
+      description: "Celebrated my birthday by donating study materials and sweets to the children at the orphanage, spreading smiles and hope.",
+      date: "April 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/AHeuz4cT0Xo", // keep or update the video link if needed
+      thumbnail: "/images/mq2.webp", // keep or update thumbnail
+      stats: "40+ Children • 1 Orphanage Home"
+    },
   {
-    id: 3,
-    title: "Digital Learning Initiative",
-    description: "Provided tablets and digital resources to 3 rural schools, impacting 750+ students with modern learning tools.",
-    date: "September 2023",
-    status: "Completed",
-    videoUrl: "https://youtu.be/nGpTi3dqrpE",
-    thumbnail: "/images/mq3.webp",
-    stats: "3 Schools • 750 Students"
-  }
+      id: 3,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/nGpTi3dqrpE", // update if you have a different video
+      thumbnail: "/images/mq3.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 4,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/M5k34dr6v0c?si=M4Xi3KtL1_dDfgmk", // update if you have a different video
+      thumbnail: "/images/mq5.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 5,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/Y_Ck73Zpljc?si=xmxa8kv0Gyw4JEPF", // update if you have a different video
+      thumbnail: "/images/mq6.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 6,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/z2DWftO0iUw?si=kwhKYFU3aWhzreGO", // update if you have a different video
+      thumbnail: "/images/mq7.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 7,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/w5sBUb3J-q4?si=NDfCJuh4z2bGhQHp", // update if you have a different video
+      thumbnail: "/images/mq8.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 8,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/4HuCfR3dbOI?si=rO7QucGiv6V03ODs", // update if you have a different video
+      thumbnail: "/images/mq9.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 9,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/9rMAL8yv6JU?si=2XBJB3xTbPQgVIvW", // update if you have a different video
+      thumbnail: "/images/mq10.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    {
+      id: 10,
+      title: "Independence Day Celebration",
+      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      date: "August 2024",
+      status: "Completed",
+      videoUrl: "https://youtu.be/L1v5xU375DU?si=nlYLVEJNoIeT1mt4", // update if you have a different video
+      thumbnail: "/images/mq11.webp", // update if you have a new image
+      stats: "50+ Children • 1 Orphanage"
+    },
+    
 ];
 
 export default function PreviousCausesPage() {
@@ -68,7 +139,7 @@ export default function PreviousCausesPage() {
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
         <Image
-          src="/images/previous-work-hero.jpg"
+          src="/images/banner-3.jpg"
           alt="Our previous initiatives making impact"
           fill
           className="object-cover"

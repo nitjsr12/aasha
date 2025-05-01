@@ -9,7 +9,9 @@ import {
   Twitter, 
   Instagram, 
   Linkedin,
-  ArrowRight  // Added ArrowRight import
+  Youtube,
+  ArrowRight,  // Added ArrowRight import
+  Target
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -24,10 +26,10 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, url: "#" },
-    { icon: <Twitter className="w-5 h-5" />, url: "#" },
-    { icon: <Instagram className="w-5 h-5" />, url: "#" },
-    { icon: <Linkedin className="w-5 h-5" />, url: "#" }
+    { icon: <Facebook className="w-5 h-5" />, url: "https://www.facebook.com/share/1AX4JjHtcX/",target: "_blank", rel: "noopener noreferrer" },
+    { icon: <Youtube className="w-5 h-5" />, url: "https://youtube.com/channel/UCSnDYm2-1n3CSV62APOmLOQ?si=JosGNTs9E3CAH8zd", target: "_blank", rel: "noopener noreferrer" },
+    { icon: <Instagram className="w-5 h-5" />, url: "https://www.instagram.com/aasha_ki_ek_kiran?igsh=MXR4ZWJobW8ydWswag==" , target: "_blank", rel: "noopener noreferrer" },
+    { icon: <Linkedin className="w-5 h-5" />, url: "https://www.linkedin.com/company/%E0%A4%86%E0%A4%B6%E0%A4%BE/", target: "_blank", rel: "noopener noreferrer" },
   ];
 
   const quickLinks = [
@@ -75,6 +77,8 @@ export default function Footer() {
                 <motion.a
                   key={index}
                   href={social.url}
+                  target={social.target}
+                  rel={social.rel}
                   whileHover={{ y: -3 }}
                   className="p-2 rounded-full bg-white dark:bg-gray-800 shadow-sm hover:shadow-md transition-all"
                 >
@@ -157,18 +161,18 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-primary mr-3 mt-0.5" />
-                <span className="text-muted-foreground">123 Hope Street, New Delhi, India</span>
+                <span className="text-muted-foreground">1st stage,BTM Layout, Bengaluru(560068)</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3" />
                 <a href="mailto:contact@hopefoundation.org" className="text-muted-foreground hover:text-primary transition-colors">
-                  contact@hopefoundation.org
+                  contact@.org
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-primary mr-3" />
-                <a href="tel:+919876543210" className="text-muted-foreground hover:text-primary transition-colors">
-                  +91 98765 43210
+                <a href="tel:+919632305896" className="text-muted-foreground hover:text-primary transition-colors">
+                  +91 9632305896 
                 </a>
               </li>
             </ul>
