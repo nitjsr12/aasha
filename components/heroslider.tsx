@@ -102,7 +102,7 @@ export function HeroSlider() {
               </div>
 
               {/* Content */}
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
+              <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6 pt-10">
                 <motion.div
                   initial="hidden"
                   animate="visible"
@@ -159,11 +159,7 @@ export function HeroSlider() {
       </Swiper>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 hidden md:block">
-        <div className="animate-bounce w-8 h-14 rounded-full border-2 border-white/40 flex justify-center items-start p-2">
-          <div className="w-2 h-2 bg-white rounded-full" />
-        </div>
-      </div>
+    
     </section>
   );
 }

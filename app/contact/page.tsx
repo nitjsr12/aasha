@@ -20,8 +20,7 @@ const contactInfo = [
     icon: <Mail className="h-6 w-6 text-primary" />,
     title: "Email",
     details: [
-      "contact@hopefoundation.org",
-      "support@hopefoundation.org"
+      "contact@ahshakiekkiran.org",
     ],
     color: "text-blue-500",
     bgColor: "bg-blue-500/10"
@@ -30,8 +29,7 @@ const contactInfo = [
     icon: <Phone className="h-6 w-6 text-primary" />,
     title: "Phone",
     details: [
-      "+91 98765 43210",
-      "+91 98765 43211"
+      "+91 9632305896",
     ],
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10"
@@ -40,24 +38,14 @@ const contactInfo = [
     icon: <MapPin className="h-6 w-6 text-primary" />,
     title: "Address",
     details: [
-      "123 Hope Street",
-      "New Delhi, 110001",
+      "1st stage,BTM Layout",
+      "Bengaluru, 560068",
       "India"
     ],
     color: "text-amber-500",
     bgColor: "bg-amber-500/10"
   },
-  {
-    icon: <Clock className="h-6 w-6 text-primary" />,
-    title: "Working Hours",
-    details: [
-      "Monday - Friday: 9:00 AM - 6:00 PM",
-      "Saturday: 9:00 AM - 1:00 PM",
-      "Sunday: Closed"
-    ],
-    color: "text-purple-500",
-    bgColor: "bg-purple-500/10"
-  }
+  
 ];
 
 export default function ContactPage() {

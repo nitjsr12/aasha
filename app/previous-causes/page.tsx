@@ -48,86 +48,94 @@ const projects = [
       thumbnail: "/images/mq2.webp", // keep or update thumbnail
       stats: "40+ Children • 1 Orphanage Home"
     },
-  {
+    {
       id: 3,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
+      title: "Republic Day Celebration",
+      description: "Honored Republic Day with a vibrant celebration at the orphanage, including a flag hoisting ceremony, patriotic performances by children, and distribution of snacks and educational kits.",
+      date: "January 2024",
       status: "Completed",
-      videoUrl: "https://youtu.be/nGpTi3dqrpE", // update if you have a different video
-      thumbnail: "/images/mq3.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
+      videoUrl: "https://youtu.be/nGpTi3dqrpE", // replace with actual video URL if available
+      thumbnail: "/images/mq3.webp", // replace with your Republic Day event image
+      stats: "60+ Children • 1 Orphanage"
     },
+    
     {
       id: 4,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
+      title: "Diwali Celebration at Orphanage",
+      description: "Celebrated the festival of lights by donating sweets and study materials to children at the orphanage, spreading joy and supporting their education.",
+      date: "November 2021",
       status: "Completed",
-      videoUrl: "https://youtu.be/M5k34dr6v0c?si=M4Xi3KtL1_dDfgmk", // update if you have a different video
-      thumbnail: "/images/mq5.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
+      videoUrl: "https://youtu.be/M5k34dr6v0c?si=M4Xi3KtL1_dDfgmk", 
+      thumbnail: "/images/mq5.webp", 
+      stats: "55+ Children • 1 Orphanage"
     },
+    
     {
       id: 5,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
+      title: "Saraswati Puja Celebration",
+      description: "Observed Saraswati Puja with children at the orphanage, offering prayers for wisdom and learning, and donating study materials to support their education.",
+      date: "February 2025",
       status: "Completed",
-      videoUrl: "https://youtu.be/Y_Ck73Zpljc?si=xmxa8kv0Gyw4JEPF", // update if you have a different video
-      thumbnail: "/images/mq6.webp", // update if you have a new image
+      videoUrl: "https://youtu.be/Y_Ck73Zpljc?si=xmxa8kv0Gyw4JEPF", // replace with actual video URL
+      thumbnail: "/images/mq6.webp", // replace with your Saraswati Puja image
       stats: "50+ Children • 1 Orphanage"
-    },
-    {
-      id: 6,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
-      status: "Completed",
-      videoUrl: "https://youtu.be/z2DWftO0iUw?si=kwhKYFU3aWhzreGO", // update if you have a different video
-      thumbnail: "/images/mq7.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
-    },
-    {
-      id: 7,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
-      status: "Completed",
-      videoUrl: "https://youtu.be/w5sBUb3J-q4?si=NDfCJuh4z2bGhQHp", // update if you have a different video
-      thumbnail: "/images/mq8.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
-    },
+    },   
+  
+      {
+        id: 6,
+        title: "Tribute to Pulwama Bravehearts & Support to Specially-Abled School",
+        description: "Paid heartfelt tribute to the Pulwama martyrs and extended support to a school for physically challenged children by donating food and study materials.",
+        date: "February 2025",
+        status: "Completed",
+        videoUrl: "https://youtu.be/z2DWftO0iUw?si=kwhKYFU3aWhzreGO", 
+        thumbnail: "/images/mq7.webp", 
+        stats: "40+ Children • 1 Special School"
+      },
+      
+      {
+        id: 7,
+        title: "Birthday Celebration with Orphanage Children",
+        description: "Celebrated a special birthday with the children at the orphanage, organizing games, cake-cutting, and distributing gifts and snacks to spread smiles and joy.",
+        date: "March 2025",
+        status: "Completed",
+        videoUrl: "https://youtu.be/w5sBUb3J-q4?si=NDfCJuh4z2bGhQHp", // replace with actual video URL
+        thumbnail: "/images/mq14.png", // replace with your birthday celebration image
+        stats: "50+ Children • 1 Orphanage"
+      },
+      
+    
     {
       id: 8,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
+      title: "Azadi Ka Amrit Mahotsav - Sweets Distribution",
+      description: "On the auspicious occasion of Azadi Ka Amrit Mahotsav, Aasha ki ek kiran Foundation visited an old age home to distribute sweets and share moments of warmth and gratitude with the elderly.",
       date: "August 2024",
       status: "Completed",
-      videoUrl: "https://youtu.be/4HuCfR3dbOI?si=rO7QucGiv6V03ODs", // update if you have a different video
-      thumbnail: "/images/mq9.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
-    },
-    {
-      id: 9,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
-      status: "Completed",
-      videoUrl: "https://youtu.be/9rMAL8yv6JU?si=2XBJB3xTbPQgVIvW", // update if you have a different video
-      thumbnail: "/images/mq10.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
+      videoUrl: "https://youtu.be/4HuCfR3dbOI?si=rO7QucGiv6V03ODs", // replace with actual video URL
+      thumbnail: "/images/mq9.webp", // replace with your event image
+      stats: "40+ Elders • 1 Old Age Home"
     },
     {
       id: 10,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 2024",
+      title: "Tribute on Mother's Punyatithi – Food Donation at Old Age Home",
+      description: "In loving memory of my mother, food was donated at an old age home as a humble tribute. The initiative aimed to honor her life by spreading care and nourishment to the elderly residents.",
+      date: "October 2023",
       status: "Completed",
-      videoUrl: "https://youtu.be/L1v5xU375DU?si=nlYLVEJNoIeT1mt4", // update if you have a different video
-      thumbnail: "/images/mq11.webp", // update if you have a new image
+      videoUrl: "https://www.youtube.com/watch?v=9rMAL8yv6JU", 
+      thumbnail: "/images/mq12.png", 
+      stats: "50+ Elders • 1 Old Age Home"
+    },    
+    
+    {
+      id: 11,
+      title: "Tribute on Mother's Punyatithi – Food Donation at Orphanage",
+      description: "In sacred remembrance of my mother’s punyatithi, food was lovingly donated to children at the orphanage. A heartfelt initiative to honor her memory through kindness and nourishment.",
+      date: "October 2023",
+      status: "Completed",
+      videoUrl: "https://youtu.be/L1v5xU375DU?si=nlYLVEJNoIeT1mt4", // actual video URL
+      thumbnail: "/images/mq13.png", // event image
       stats: "50+ Children • 1 Orphanage"
     },
+    
     
 ];
 

@@ -48,16 +48,16 @@ const projects = [
       thumbnail: "/images/mq2.webp", // keep or update thumbnail
       stats: "40+ Children • 1 Orphanage "
     },
-  {
+    {
       id: 3,
-      title: "Independence Day Celebration",
-      description: "Celebrated Independence Day with children at the orphanage, organizing fun activities, flag hoisting, and distributing sweets.",
-      date: "August 15, 2022",
+      title: "Republic Day Celebration",
+      description: "Honored Republic Day with a vibrant celebration at the orphanage, including a flag hoisting ceremony, patriotic performances by children, and distribution of snacks and educational kits.",
+      date: "January 2025",
       status: "Completed",
-      videoUrl: "https://youtu.be/nGpTi3dqrpE", // update if you have a different video
-      thumbnail: "/images/mq3.webp", // update if you have a new image
-      stats: "50+ Children • 1 Orphanage"
-    }
+      videoUrl: "https://youtu.be/nGpTi3dqrpE", // replace with actual video URL if available
+      thumbnail: "/images/mq3.webp", // replace with your Republic Day event image
+      stats: "60+ Children • 1 Orphanage"
+    },
     
 ];
 

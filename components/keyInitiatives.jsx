@@ -127,12 +127,6 @@ export function KeyInitiatives() {
                       {initiative.stats}
                     </span>
                     <Link href={initiative.link}>
-                      <Button 
-                        variant="ghost" 
-                        className={`${initiative.color} hover:${initiative.bgColor}`}
-                      >
-                        Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
                     </Link>
                   </div>
                 </div>
@@ -145,7 +139,7 @@ export function KeyInitiatives() {
           className="text-center mt-16"
           variants={fadeInUp}
         >
-          <Link href="/initiatives">
+          <Link href="/causes">
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-lg hover:shadow-primary/30 transition-all"

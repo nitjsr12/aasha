@@ -206,7 +206,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { number: "500+", label: "Students Supported" },
-            { number: "10+", label: "Schools Partnered" },
+            { number: "10+", label: "NGO Partners" },
             { number: "24", label: "Monthly Visits" },
             { number: "10+", label: "Success Stories" }
           ].map((item, index) => (

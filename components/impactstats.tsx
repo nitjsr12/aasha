@@ -72,7 +72,7 @@ export function ImpactStats() {
             </div>
             <AnimatedCounter value={10} suffix="+" />
             <p className="text-lg mt-4 font-medium text-gray-600 dark:text-gray-300">
-              Schools Partnered
+            NGO Partners
             </p>
             <div className="mt-4 h-1 w-20 mx-auto bg-gradient-to-r from-primary to-secondary rounded-full" />
           </motion.div>

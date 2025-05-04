@@ -192,15 +192,7 @@ export default function Footer() {
             <p className="mb-4 md:mb-0">
               &copy; {currentYear} Aasha Ki Ek Kiran. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <Link href="/privacy" className="hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="hover:text-primary transition-colors">
-                Terms of Service
-              </Link>
-              
-            </div>
+            
           </div>
         </motion.div>
       </div>
