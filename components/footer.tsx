@@ -35,7 +35,7 @@ export default function Footer() {
   const quickLinks = [
     { name: "About Us", url: "/about" },
     { name: "Our Causes", url: "/causes" },
-    { name: "Events", url: "/events" },
+    { name: "Gallery", url: "/gallery" },
     { name: "Blog", url: "/blog" },
     { name: "Contact", url: "/contact" }
   ];
