@@ -9,6 +9,7 @@ import { Mail, Phone, MapPin, Clock, Send, ArrowRight, Check } from "lucide-reac
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -20,7 +21,7 @@ const contactInfo = [
     icon: <Mail className="h-6 w-6 text-primary" />,
     title: "Email",
     details: [
-      "contact@ahshakiekkiran.org",
+      "contact@admin.ahshakiekkiran.org",
     ],
     color: "text-blue-500",
     bgColor: "bg-blue-500/10"
@@ -45,7 +46,6 @@ const contactInfo = [
     color: "text-amber-500",
     bgColor: "bg-amber-500/10"
   },
-  
 ];
 
 export default function ContactPage() {
@@ -57,28 +57,47 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    console.log(formData);
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+    setError("");
+
+    try {
+      // Send form data to your API route
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      const result = await response.json();
+      
+      if (result.success) {
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setError(result.message || 'Something went wrong');
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message');
+      console.error('Error submitting form:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -176,8 +195,6 @@ export default function ContactPage() {
                 </Card>
               </motion.div>
             ))}
-
-            {/* Map Section */}
           </div>
 
           {/* Contact Form */}
@@ -219,6 +236,12 @@ export default function ContactPage() {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="p-4 bg-red-100 text-red-700 rounded-md">
+                      {error}
+                    </div>
+                  )}
+                  
                   <motion.div
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
