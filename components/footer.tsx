@@ -166,7 +166,7 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3" />
                 <a href="mailto:contact@hopefoundation.org" className="text-muted-foreground hover:text-primary transition-colors">
-                  contact@.org
+                contact@ahshakiekkiran.org
                 </a>
               </li>
               <li className="flex items-center">
