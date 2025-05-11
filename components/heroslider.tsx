@@ -28,7 +28,7 @@ const slides = [
     description: "Building thriving communities through impactful education and programs.",
     cta: "Join Us",
     href: "/causes",
-    image: "/images/banner-1.jpg",
+    image:  "/images/72.jpeg",
     overlay: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6))"
   },
   {
@@ -53,7 +53,7 @@ const textVariants = {
 
 export function HeroSlider() {
   return (
-    <section className="relative h-screen max-h-[720px] w-full overflow-hidden">
+    <section className="relative h-screen max-h-[720px] w-full overflow-hidden  ">
       {/* Decorative overlays */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary/20 to-transparent" />

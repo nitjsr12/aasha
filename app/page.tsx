@@ -18,6 +18,7 @@ import { HeroSlider } from "@/components/heroslider";
 import {KeyInitiatives} from "@/components/keyInitiatives"
 import { JoinMission } from "@/components/joinmission";
 import { UpcomingEventsSection} from "@/components/upcomingevents"
+import { ImageGallery } from "@/components/ImageGallery";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -36,7 +37,8 @@ export default function Home() {
 
       {/* Our Causes */}
        <KeyInitiatives/>
-       <UpcomingEventsSection/>
+       {/* <UpcomingEventsSection/> */}
+       <ImageGallery/>
       {/* Previous Work Showcase */}
       <PreviousWorkSection/>
       {/* Join Us Section */}

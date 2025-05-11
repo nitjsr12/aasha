@@ -28,6 +28,17 @@ const cardHover = {
 };
 
 const projects = [
+  
+  {
+    id: 1,
+    title: "Mother's Day Celebration",
+    description: "Spent a heartfelt day with the elderly women at an old age home, sharing sweets, fruits, laughter, and love—reminding them they are cherished and never forgotten.",
+    date: "May 11, 2025",
+    status: "Completed",
+    videoUrl: "https://youtu.be/Qa8KM0oDIwM", // (replace with your updated video link if needed)
+    thumbnail: "/images/75.jpeg", // (update image if you have a relevant one)
+    stats: "40+ Residents • 1 Old Age Home"
+  },
   {
     id: 1,
     title: "Study Material Donation",

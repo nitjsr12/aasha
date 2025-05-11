@@ -30,13 +30,13 @@ const cardHover = {
 const projects = [
   {
     id: 1,
-    title: "Study Material Donation",
-    description: "Distributed essential study materials to girls at orphanage homes, empowering their education and dreams.",
-    date: "Feb 11, 2022",
+    title: "Mother's Day Celebration",
+    description: "Spent a heartfelt day with the elderly women at an old age home, sharing sweets, fruits, laughter, and love—reminding them they are cherished and never forgotten.",
+    date: "May 11, 2025",
     status: "Completed",
-    videoUrl: "https://youtu.be/vSrv11UqpWU?si=jR0arl48FzeDga3B", // (keep your video or update if needed)
-    thumbnail: "/images/mq4.webp", // (keep or update thumbnail if needed)
-    stats: "50+ Girls • 1 Orphanage"
+    videoUrl: "https://youtu.be/Qa8KM0oDIwM", // (replace with your updated video link if needed)
+    thumbnail: "/images/75.jpeg", // (update image if you have a relevant one)
+    stats: "40+ Residents • 1 Old Age Home"
   },
   {
       id: 2,
